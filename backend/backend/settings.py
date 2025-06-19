@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'blog',
+     
 ]
 
 MIDDLEWARE = [
@@ -51,8 +52,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
      'corsheaders.middleware.CorsMiddleware',
-]
 
+]
+CORS_ALLOW_ALL_ORIGINS = True 
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -141,4 +143,5 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
